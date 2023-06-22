@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do list</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-secondary">
+    <div class="container">
+        <div class="row  justify-content-center">
+            <div id="show3" class=" mt-5  col-7 "></div>
+            <div class="form-body col-7  mt-5  ">
+                <form action="" id="kayit">
+                    <input type="text" placeholder="isim" id="nameInput" class="d-block bg-transparent form-control mb-3">
+                    <input placeholder="yaş" type="number" id="ageInput" class="form-control bg-transparent mb-3">
+                    <div class="d-flex justify-content-center">
+                        <button class=" btn btn-primary px-4" onclick="getData()" type="button">Ekle</button>
+                    </div>
+                </form>
+            </div>
+            <div id="show2" class=" mt-5  col-7">
+                <ul class="claslist list-group" id="userList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js-example.js"></script>
+</body>
+</html>
