@@ -3,7 +3,6 @@ let showArea3 = document.getElementById("show3");
 let alertElement = document.getElementById("show3");
 let isim = document.getElementById("nameInput");
 let yas = document.getElementById("ageInput");
-let number = 0;
 const alert =(color,mesage,mesage2)=> `<div class="alert  alert-${color} alert-dismissible fade show" role="alert">
 <strong>${mesage}!</strong> ${mesage2}
 </div>`;
@@ -39,7 +38,6 @@ const close_btn=`<button type="button" class="btn-close float-end" aria-label="C
 
 const addItem = (userName,userAge)=>{
     let liDom = document.createElement("li");
-    number +=1;
     liDom.innerHTML = `isim : ${userName} yaşı : ${userAge} ${close_btn}`;
     liDom.classList.add('list-group-item');
     liDom.id = "itemToDelete";
